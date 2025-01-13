@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#">Produtos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="#contatos">Contato</a>
                   </li>
                 </ul>
               </div>
@@ -54,6 +54,8 @@
               {% for produto in produtos %}
               <div class="col-md-4 mb-4">
                   <div class="card h-100">
+                    
+
                       <img src="https://dummyimage.com/600x400/ccc/000&text=Produto {{ produto.id }}" class="card-img-top" alt="Produto ">
                       <div class="card-body">
                           <h5 class="card-title">Produto: {{ produto.nome }}</h5>
@@ -69,7 +71,16 @@
     {% endif %}
 
 
-
+      <div id="container" class="text-center">
+        <strong>
+          Numero: 656765767
+        <br>
+        Email:email@gmail.com
+        <br>
+        Whatsapp: (84)99999999
+        </strong>
+        
+      </div>
               
           </div>
         </section>

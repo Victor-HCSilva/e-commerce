@@ -13,6 +13,8 @@ class Produto(models.Model):
     descricao = models.TextField()
     preco = models.DecimalField(max_digits=10, decimal_places=2) 
     quantidade = models.IntegerField()
+    #image = models.ImageField(upload_to='produtos/', blank=True, null=True)  # Configurado upload_to, blank e null
+
 
     def __str__(self):
         return self.nome.nome
